@@ -1,0 +1,26 @@
+{
+  "0": {
+    "state": "Success",
+    "description": "Returned results successfully."
+  },
+  "1": {
+    "state": "No Results",
+    "description": "Could not return results. The API doesn't have enough questions for your query. (Ex. Asking for 50 Questions in a Category that only has 20.)"
+  },
+  "2": {
+    "state": "Invalid Parameter",
+    "description": "Contains an invalid parameter. Arguments passed in aren't valid. (Ex. Amount = Five)"
+  },
+  "3": {
+    "state": "Token Not Found",
+    "description": "Session Token does not exist."
+  },
+  "4": {
+    "state": "Token Empty",
+    "description": "Session Token has returned all possible questions for the specified query. Resetting the Token is necessary."
+  },
+  "5": {
+    "state": "Rate Limit",
+    "description": "Too many requests have occurred. Each IP can only access the API once every 5 seconds."
+  }
+}

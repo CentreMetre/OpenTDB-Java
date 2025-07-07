@@ -1,0 +1,7 @@
+{
+  "Amount": "amount",
+  "Type": "type",
+  "Difficulty": "difficulty",
+  "Category": "category",
+  "Encode": "encode"
+}

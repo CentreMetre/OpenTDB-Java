@@ -3,7 +3,7 @@ package dev.centremetre.util;
 /**
  * Use the builder pattern to build a URL with the 5 parameters.
  */
-public class URLBuilder
+public class UrlBuilder
 {
     private static final String BASE_URL = "https://opentdb.com/api.php?";
 
@@ -23,7 +23,7 @@ public class URLBuilder
      * @throws IllegalArgumentException If the amount is less than 1 or greater than 50.
      * @throws NumberFormatException If the amount is not a number or if it is not an integer.
      */
-    public URLBuilder(String questionCount)
+    public UrlBuilder(String questionCount)
     {
         setQuestionCount(questionCount);
     }
@@ -51,25 +51,25 @@ public class URLBuilder
         this.questionCount = intAmount;
     }
 
-    public URLBuilder setQuestionType(String questionType)
+    public UrlBuilder setQuestionType(String questionType)
     {
         this.questionType = questionType;
         return this;
     }
 
-    public URLBuilder setDifficulty(String difficulty)
+    public UrlBuilder setDifficulty(String difficulty)
     {
         this.difficulty = difficulty;
         return this;
     }
 
-    public URLBuilder setCategory(String category)
+    public UrlBuilder setCategory(String category)
     {
         this.category = category;
         return this;
     }
 
-    public URLBuilder setEncoding(String encoding)
+    public UrlBuilder setEncoding(String encoding)
     {
         this.encoding = encoding;
         return this;

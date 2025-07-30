@@ -1,10 +1,13 @@
-package dev.centremetre.model;
+package dev.centremetre.OpenTDBJava.model;
 
 import java.util.List;
 
+/**
+ * A class representing a quiz.
+ */
 public class Quiz
 {
-    Quiz(List<Question> questions)
+    public Quiz(List<Question> questions)
     {
         this.questions = questions;
     }

@@ -1,27 +1,35 @@
-package dev.centremetre.model;
+package dev.centremetre.OpenTDBJava.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * A class that holds the question information and
+ * can also hold the user's inputted answer and a boolean of if they answered it correctly.
+ * Contains util method for getting shuffled answers. And a method for getting all answers,
+ * with the correct answer being the first element of a list.
+ */
 public class Question
 {
-    Question(String correctAnswer, Iterable<String> incorrectAnswers)
-    {
-        this.correctAnswer = correctAnswer;
-        this.incorrectAnswers = incorrectAnswers;
-    }
-
+    @JsonProperty("type")
     private QuestionType questionType;
 
+    @JsonProperty("difficulty")
     private String difficulty;
 
+    @JsonProperty("category")
     private String category;
 
+    @JsonProperty("question")
     private String question;
 
+    @JsonProperty("correct_answer")
     private String correctAnswer;
 
+    @JsonProperty("incorrect_answers")
     private Iterable<String> incorrectAnswers;
 
     /**
@@ -77,6 +85,12 @@ public class Question
         List<String> answers = getAnswers();
         Collections.shuffle(answers);
         return answers;
+    }
+
+    @Override
+    public String toString()
+    {
+        return question + " | " + correctAnswer;
     }
 
     public QuestionType getQuestionType()

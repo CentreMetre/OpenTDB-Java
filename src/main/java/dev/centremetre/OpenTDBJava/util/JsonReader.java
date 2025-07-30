@@ -1,4 +1,4 @@
-package dev.centremetre.util;
+package dev.centremetre.OpenTDBJava.util;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class JsonReader
 {
-
     public static Map<String, Object> readJson(String json) throws Exception
     {
         ObjectMapper mapper = new ObjectMapper();

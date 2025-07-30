@@ -1,4 +1,4 @@
-package dev.centremetre.model;
+package dev.centremetre.OpenTDBJava.model;
 
 import java.util.HashMap;
 import java.util.Map;

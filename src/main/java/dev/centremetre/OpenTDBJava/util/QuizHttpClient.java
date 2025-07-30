@@ -1,6 +1,6 @@
-package dev.centremetre.util;
+package dev.centremetre.OpenTDBJava.util;
 
-import dev.centremetre.external.OpenTDBResponse;
+import dev.centremetre.OpenTDBJava.external.OpenTDBResponse;
 
 import java.io.IOException;
 import java.net.URI;

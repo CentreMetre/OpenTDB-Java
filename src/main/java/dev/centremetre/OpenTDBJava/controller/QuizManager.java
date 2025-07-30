@@ -1,7 +1,7 @@
-package dev.centremetre.controller;
+package dev.centremetre.OpenTDBJava.controller;
 
-import dev.centremetre.model.Question;
-import dev.centremetre.model.Quiz;
+import dev.centremetre.OpenTDBJava.model.Question;
+import dev.centremetre.OpenTDBJava.model.Quiz;
 
 import java.util.List;
 

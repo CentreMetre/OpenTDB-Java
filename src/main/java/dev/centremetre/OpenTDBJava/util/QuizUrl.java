@@ -1,9 +1,9 @@
-package dev.centremetre.util;
+package dev.centremetre.OpenTDBJava.util;
 //Todo review if needed
 /**
- * Use the builder pattern to build a URL with the 5 parameters.
+ * A class that builds and holds an opentdb.com url
  */
-public class QuizUrlBuilder
+public class QuizUrl
 {
     private static final String BASE_URL = "https://opentdb.com/api.php?";
 
@@ -23,7 +23,7 @@ public class QuizUrlBuilder
      * @throws IllegalArgumentException If the amount is less than 1 or greater than 50.
      * @throws NumberFormatException If the amount is not a number or if it is not an integer.
      */
-    public QuizUrlBuilder(String questionCount)
+    public QuizUrl(String questionCount)
     {
         setQuestionCount(questionCount);
     }
@@ -51,25 +51,25 @@ public class QuizUrlBuilder
         this.questionCount = intAmount;
     }
 
-    public QuizUrlBuilder setQuestionType(String questionType)
+    public QuizUrl setQuestionType(String questionType)
     {
         this.questionType = questionType;
         return this;
     }
 
-    public QuizUrlBuilder setDifficulty(String difficulty)
+    public QuizUrl setDifficulty(String difficulty)
     {
         this.difficulty = difficulty;
         return this;
     }
 
-    public QuizUrlBuilder setCategory(String category)
+    public QuizUrl setCategory(String category)
     {
         this.category = category;
         return this;
     }
 
-    public QuizUrlBuilder setEncoding(String encoding)
+    public QuizUrl setEncoding(String encoding)
     {
         this.encoding = encoding;
         return this;

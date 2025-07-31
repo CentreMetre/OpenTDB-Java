@@ -1,4 +1,4 @@
-package dev.centremetre.OpenTDBJava.controller;
+package dev.centremetre.OpenTDBJava.service;
 
 import dev.centremetre.OpenTDBJava.model.Question;
 import dev.centremetre.OpenTDBJava.model.Quiz;
@@ -15,7 +15,7 @@ public class QuizManager
         this.quiz = quiz;
     }
 
-    private Quiz quiz;
+    private final Quiz quiz;
 
     private int currentQuestionIndex = 0;
 
